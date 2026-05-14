@@ -9,20 +9,21 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout Repository
+      uses: actions/checkout@v4
 
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
 
-        node-version: '22.x'
+        node-version: '22'
 
-    - name: Instalar dependências e Rodar Testes (API)
+        cache: 'npm'
+        cache-dependency-path: api-piscina/package-lock.json
+
+    - name: Instalar dependências e Rodar Testes
       run: |
         cd api-piscina
         npm install
