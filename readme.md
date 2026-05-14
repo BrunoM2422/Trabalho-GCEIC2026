@@ -34,7 +34,7 @@ Este projeto tem como objetivo desenvolver uma aplicação completa para cálcul
   git clone https://github.com/BrunoM2422/Trabalho-GCEIC2026.git
 ```
 
-## 2. Acesse a pasta
+## 2. Abra um novo terminal e siga os seguintes passos:
 ```bash
 cd api-piscina
 ```
@@ -45,13 +45,13 @@ npm install
 ```bash
 node server.js
 ```
-A API estará disponível em:
+Caso tudo esteja funcionando, aparecerá que a API estará rodando na seguinte porta:
 ```bash 
 http://localhost:3000
 ```
 
 
-## 3. Abra um novo terminal e acesse a pasta
+## 3. Abra um novo terminal, sem fechar o anterior, e siga os seguintes passos:
 ```bash
 cd app-piscina
 ```
@@ -62,7 +62,7 @@ npm install
 ```bash
 npm run dev
 ```
-A aplicação estará disponível em:
+A aplicação estará disponível em, cole o link no seu navegador para utilizá-la:
 ```bash 
 http://localhost:5173
 ```
