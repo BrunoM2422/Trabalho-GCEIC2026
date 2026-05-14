@@ -11,7 +11,6 @@ function Sobre() {
       <p>Projeto Integrador 3 - Grupo 17</p>
 
       <div style={{ marginTop: '20px', border: '1px solid #ddd', padding: '20px', borderRadius: '8px' }}>
-        {/* Foto da Equipe conforme exigido no item 12 do PDF */}
         <img 
           src="https://via.placeholder.com/300x200?text=Foto+da+Equipe" 
           alt="Foto da Equipe" 

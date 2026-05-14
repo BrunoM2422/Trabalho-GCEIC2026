@@ -7,7 +7,6 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Verificação de usuário e senha fixos conforme o PDF
     if (user === 'admin' && pass === '1234') {
       navigate('/calculadora');
     } else {

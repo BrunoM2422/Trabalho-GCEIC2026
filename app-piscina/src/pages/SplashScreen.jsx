@@ -5,7 +5,6 @@ function SplashScreen() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Redireciona para o login após 3 segundos
     const timer = setTimeout(() => {
       navigate('/login');
     }, 3000);
@@ -17,7 +16,7 @@ function SplashScreen() {
     <div style={styles.container}>
       <h1 style={styles.title}>Calculadora de Piscina</h1>
       <p>Carregando projeto GCEIC2026...</p>
-      <div className="spinner"></div> {/* Você pode estilizar um loading aqui depois */}
+      <div className="spinner"></div> 
     </div>
   );
 }
