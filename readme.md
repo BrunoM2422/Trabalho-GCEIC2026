@@ -1,4 +1,3 @@
-
 # Projeto: Sistema de Cálculo de Custos para Construção de Piscinas
 
 Este projeto tem como objetivo desenvolver uma aplicação completa para cálculo de custos relacionados à construção e manutenção de piscinas.
@@ -35,7 +34,7 @@ Este projeto tem como objetivo desenvolver uma aplicação completa para cálcul
   git clone https://github.com/BrunoM2422/Trabalho-GCEIC2026.git
 ```
 
-## 2. Acesse a pasta
+## 2. Abra um novo terminal e siga os seguintes passos:
 ```bash
 cd api-piscina
 ```
@@ -46,10 +45,13 @@ npm install
 ```bash
 node server.js
 ```
-### A API está rodando em http://localhost:3000
+Caso tudo esteja funcionando, aparecerá que a API estará rodando na seguinte porta:
+```bash 
+http://localhost:3000
+```
 
 
-## 3. Abra um novo terminal e acesse a pasta
+## 3. Abra um novo terminal, sem fechar o anterior, e siga os seguintes passos:
 ```bash
 cd app-piscina
 ```
@@ -60,4 +62,18 @@ npm install
 ```bash
 npm run dev
 ```
-### Está rodando em  http://localhost:5173
+A aplicação estará disponível na rota à seguir, cole o link no seu navegador para utilizá-la:
+```bash 
+http://localhost:5173
+```
+
+## Credenciais de Teste
+### Login:
+```bash 
+admin
+```
+### Senha:
+```bash 
+1234
+```
+
