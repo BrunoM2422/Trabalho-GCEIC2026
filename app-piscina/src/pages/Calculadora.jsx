@@ -21,16 +21,39 @@ function Calculadora() {
 
   const calcularCusto = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/PISCINA/calcular', dados);
-      setResultado(response.data);
+      const resVolume = await axios.post('http://localhost:3000/PISCINA/volume/calcular', {
+        largura: dados.largura,
+        comprimento: dados.comprimento,
+        profundidade: dados.profundidade
+      });
+      const volumeCalculado = resVolume.data.volume;
+
+      const resMateriais = await axios.post('http://localhost:3000/PISCINA/materiais/calcular', {
+        precoEletrico: dados.precoEletrico,
+        precoHidraulico: dados.precoHidraulico
+      });
+
+      const resCustos = await axios.post('http://localhost:3000/PISCINA/custos/calcular', {
+        volume: volumeCalculado,
+        precoAgua: dados.precoAgua,
+        precoManutencao: dados.precoManutencao
+      });
+
+      setResultado({
+        volume: volumeCalculado,
+        custoMateriais: resMateriais.data.custoMateriais,
+        custoAgua: resCustos.data.custoAgua,
+        custoManutencao: resCustos.data.custoManutencao,
+        totalObra: (parseFloat(resCustos.data.custoAgua) + parseFloat(resMateriais.data.custoMateriais)).toFixed(2)
+      });
+
     } catch (error) {
-      console.error("Erro ao calcular:", error);
-      alert("Erro ao conectar com a API. Verifique se o servidor Node está rodando!");
+      console.error("Erro ao calcular em múltiplas APIs:", error);
+      alert("Erro ao conectar com as APIs. Verifique se o servidor Node está rodando!");
     }
   };
 
   return (
-    
     <div style={{ 
       padding: '20px', 
       fontFamily: 'Arial', 
@@ -46,7 +69,6 @@ function Calculadora() {
 
       <h1 style={{ textAlign: 'center' }}>Cálculo de Custo da Piscina</h1>
       
-    
       <div style={{ 
         display: 'grid', 
         gap: '10px', 
