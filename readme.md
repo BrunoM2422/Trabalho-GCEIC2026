@@ -1,4 +1,3 @@
-
 # Projeto: Sistema de Cálculo de Custos para Construção de Piscinas
 
 Este projeto tem como objetivo desenvolver uma aplicação completa para cálculo de custos relacionados à construção e manutenção de piscinas.
@@ -46,7 +45,10 @@ npm install
 ```bash
 node server.js
 ```
-### A API está rodando em http://localhost:3000
+A API estará disponível em:
+```bash 
+http://localhost:3000
+```
 
 
 ## 3. Abra um novo terminal e acesse a pasta
@@ -60,4 +62,18 @@ npm install
 ```bash
 npm run dev
 ```
-### Está rodando em  http://localhost:5173
+A aplicação estará disponível em:
+```bash 
+http://localhost:5173
+```
+
+## Credenciais de Teste
+### Login:
+```bash 
+admin
+```
+### Senha:
+```bash 
+1234
+```
+
