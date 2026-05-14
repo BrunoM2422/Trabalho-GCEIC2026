@@ -62,7 +62,7 @@ npm install
 ```bash
 npm run dev
 ```
-A aplicação estará disponível em, cole o link no seu navegador para utilizá-la:
+A aplicação estará disponível na rota à seguir, cole o link no seu navegador para utilizá-la:
 ```bash 
 http://localhost:5173
 ```
