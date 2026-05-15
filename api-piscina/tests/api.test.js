@@ -14,7 +14,7 @@ app.use('/PISCINA/volume', volumeRoutes);
 app.use('/PISCINA/materiais', materiaisRoutes);
 app.use('/PISCINA/custos', custosRoutes);
 
-describe('Testes Unitários do Sistema de Piscina - Grupo 17', () => {
+describe('Testes Unitários do Sistema de Piscina - Grupo 7', () => {
   
   // 1. Teste da API de Volume
   it('Deve calcular o volume corretamente (Ex: 2m x 4m x 2m = 16m³)', async () => {
