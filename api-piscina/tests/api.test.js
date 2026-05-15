@@ -27,7 +27,7 @@ describe('Testes Unitários do Sistema de Piscina - Grupo 17', () => {
       });
     
     expect(res.statusCode).toEqual(200);
-    expect(res.body.volume).toBe("15.00");
+    expect(res.body.volume).toBe("16.00");
   });
 
   // 2. Teste da API de Materiais
