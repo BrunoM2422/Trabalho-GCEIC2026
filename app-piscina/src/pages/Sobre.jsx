@@ -8,7 +8,7 @@ function Sobre() {
       </Link>
       
       <h1>Sobre a Equipe</h1>
-      <p>Projeto Integrador 3 - Grupo 17</p>
+      <p>Projeto GCEIC - Grupo 7</p>
 
       <div style={{ marginTop: '20px', border: '1px solid #ddd', padding: '20px', borderRadius: '8px' }}>
         <img 

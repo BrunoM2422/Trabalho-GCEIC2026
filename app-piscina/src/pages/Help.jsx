@@ -31,7 +31,7 @@ function Help() {
       </div>
 
       <div style={{ marginTop: '30px', fontSize: '0.9rem', color: '#666' }}>
-        <p>Projeto Integrador 3 - Grupo 17</p>
+        <p>Projeto GCEIC - Grupo 7</p>
       </div>
     </div>
   );
